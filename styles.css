@@ -570,6 +570,12 @@ footer {
 
 /* === Responsive Design === */
 @media (max-width: 900px) {
+  nav ul {
+    gap: 1.3rem;
+  }
+  nav a {
+    font-size: 0.9rem;
+  }
   .container { padding: 0 1rem; }
   .about-grid, .plans-grid, .testimonials-grid, .contact-info-list {
     flex-direction: column;
@@ -584,6 +590,7 @@ footer {
 @media (max-width: 600px) {
   .nav-container { flex-direction: column; height: auto; gap: 1rem; }
   nav ul { gap: 1.2rem; }
+  nav a { font-size: 0.8rem; }
   .hero-title { font-size: 2rem; }
   section h2 { font-size: 1.4rem; }
   .about, .services, .process, .faq, .testimonials, .contact {
