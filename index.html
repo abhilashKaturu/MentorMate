@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>[Name]</title>
+  <title>MentorMate</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
     <div class="container nav-container">
-      <div class="logo-text">[Name]</div>
+      <div class="logo-text">MentorMate</div>
       <nav>
         <ul>
           <li><a href="#home">Home</a></li>
@@ -31,7 +31,7 @@
       <div class="container hero-content">
         <h1 class="hero-title">Unlock Your Academic Future</h1>
         <p class="hero-subtitle">Personalized college admissions consulting for ambitious students and families.</p>
-        <a href="#contact" class="cta-btn">Start Your Journey</a>
+        <a href="contact.html" class="cta-btn">Start Your Journey</a>
       </div>
     </section>
 
@@ -40,23 +40,21 @@
       <div class="container">
         <h2>About Us</h2>
         <div class="about-grid">
-          <div class="about-text">
-            <p>[Name] is dedicated to guiding students through the complex world of college admissions. With over a decade of experience, our team of expert consultants has helped more than 1,000 students gain acceptance to top universities worldwide. We believe in a holistic, student-centered approach that empowers each individual to showcase their unique strengths and aspirations.</p>
-            <ul class="about-list">
-              <li><span class="icon-svg">&#9673;</span> 1,000+ Students Advised</li>
-              <li><span class="icon-svg">&#9673;</span> 95% Acceptance Rate</li>
-              <li><span class="icon-svg">&#9673;</span> 50+ Top Universities</li>
-              <li><span class="icon-svg">&#9673;</span> 10+ Years of Experience</li>
-            </ul>
-          </div>
-          <div class="about-values">
-            <h3>Our Values</h3>
-            <ul>
-              <li><span class="icon-svg">&#9679;</span> Integrity & Transparency</li>
-              <li><span class="icon-svg">&#9679;</span> Personalized Guidance</li>
-              <li><span class="icon-svg">&#9679;</span> Lifelong Learning</li>
-              <li><span class="icon-svg">&#9679;</span> Student Empowerment</li>
-            </ul>
+          <div class="plans-grid" style="margin-top: 3rem;">
+            <div class="plan-card">
+              <h3>Abhilash Katuru</h3>
+              <p class="plan-desc" style="color: var(--accent); margin-top: -0.7rem;">Carnegie Mellon University</p>
+              <p class="plan-desc" style="text-align: left;">
+                Hi! I'm Abhilash, and I'm studying Computer Science at Carnegie Mellon University. I'm passionate about developing models to tackle complex problems. I have published research articles on using deep learning to detect diseases with low-information data in the biomedical field. In my high school free time, I was a part of my school's marching band and enjoyed competing in flute solo competitions. I look forward to a career where I can develop models that challenge our understanding of the world.
+              </p>
+            </div>
+            <div class="plan-card">
+              <h3>Naisha Jain</h3>
+              <p class="plan-desc" style="color: var(--accent); margin-top: -0.7rem;">U.C. Berkeley</p>
+              <p class="plan-desc" style="text-align: left;">
+                Hey! I'm Naisha, and I'm studying EECS and Business through UC Berkeley's MET Program. In high school, I conducted and presented earth science research through TSA competitions and NASA programs. In my free time, I enjoyed classical dancing, playing the flute, and crocheting. I look forward to building systems that push boundaries and redefine how we engage with the world around us.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -89,7 +87,7 @@
             </ul>
             <div class="plan-price">$50</div>
           </div>
-          <div class="plan-card featured">
+          <div class="plan-card">
             <div class="plan-icon"><svg width="32" height="32"><polygon points="16,4 28,28 4,28" fill="#2a4365"/></svg></div>
             <h3>Premium Standard</h3>
             <p class="plan-desc">Includes a 25-minute video meeting and the same essay review as the Standard Package, plus priority support.</p>
@@ -100,18 +98,26 @@
             </ul>
             <div class="plan-price">$80</div>
           </div>
-          <div class="plan-card">
-            <div class="plan-icon"><svg width="32" height="32"><ellipse cx="16" cy="16" rx="14" ry="10" fill="#2a4365"/></svg></div>
-            <h3>Full Program</h3>
-            <p class="plan-desc">Five months of full support, including biweekly meetings, weekly reviews, and unlimited guidance throughout the application process.</p>
-            <ul>
-              <li>Biweekly strategy meetings</li>
-              <li>Weekly essay reviews</li>
-              <li>Unlimited Q&A</li>
-            </ul>
-            <div class="plan-price">$180/mo</div>
-          </div>
+          
         </div>
+
+<div style="display: flex; justify-content: center; margin-top: 2.5rem;">
+  <div class="plan-card featured" style="max-width: 340px;">
+    <div class="plan-icon">
+      <svg width="32" height="32"><ellipse cx="16" cy="16" rx="14" ry="10" fill="var(--primary)"/></svg>
+    </div>
+    <h3>Full Program</h3>
+    <p class="plan-desc">Five months of full support, including biweekly meetings, weekly reviews, and unlimited guidance throughout the application process.</p>
+    <ul>
+      <li>Biweekly strategy meetings</li>
+      <li>Weekly essay reviews</li>
+      <li>Unlimited Q&A</li>
+    </ul>
+    <div class="plan-price">$180/mo</div>
+  </div>
+</div>
+
+
       </div>
     </section>
 
@@ -129,26 +135,51 @@
       </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials fade-in-section">
-      <div class="container">
-        <h2>What Our Students Say</h2>
-        <div class="testimonials-grid">
-          <div class="testimonial-card">
-            <div class="testimonial-quote">“[Name] made the college application process so much less stressful. Their advice was spot-on and the feedback on my essays was invaluable!”</div>
-            <div class="testimonial-author">— Priya S., Stanford University</div>
-          </div>
-          <div class="testimonial-card">
-            <div class="testimonial-quote">“I felt supported every step of the way. The team's knowledge and encouragement helped me get into my dream school.”</div>
-            <div class="testimonial-author">— Alex T., Columbia University</div>
-          </div>
-          <div class="testimonial-card">
-            <div class="testimonial-quote">“The full program was worth every penny. I gained confidence and clarity, and the results speak for themselves!”</div>
-            <div class="testimonial-author">— Maya L., UC Berkeley</div>
-          </div>
-        </div>
+<!-- Services by Audience Section -->
+<section id="audiences" class="services fade-in-section">
+  <div class="container">
+    <h2>Tailored Services for Every Student</h2>
+    <div class="plans-grid">
+      <!-- High School Students -->
+      <div class="plan-card">
+        <h3>High School Students</h3>
+        <ul>
+          <li>College List Building</li>
+          <li>Essay Brainstorming & Revisions</li>
+          <li>Application Strategy</li>
+          <li>Scholarship Guidance</li>
+          <li>Early Action & Early Decision Planning</li>
+        </ul>
       </div>
-    </section>
+
+
+      <!-- Transfer Students -->
+      <div class="plan-card">
+        <h3>Transfer Applicants</h3>
+        <ul>
+          <li>Transfer Essay Support</li>
+          <li>Credit Transfer Guidance</li>
+          <li>Reapplication Strategy</li>
+          <li>Transcript Review</li>
+          <li>Letter of Recommendation Strategy</li>
+        </ul>
+      </div>
+
+      <!-- Parents & Families -->
+      <div class="plan-card">
+        <h3>Parents & Families</h3>
+        <ul>
+          <li>Financial Aid & FAFSA Guidance</li>
+          <li>Application Timeline Management</li>
+          <li>School Fit Discussions</li>
+          <li>Weekly Progress Updates</li>
+          <li>Family Support Calls</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <!-- FAQ Section -->
     <section id="faq" class="faq fade-in-section">
@@ -156,8 +187,8 @@
         <h2>Frequently Asked Questions</h2>
         <div class="faq-list">
           <div class="faq-item">
-            <div class="faq-question">What makes us different?</div>
-            <div class="faq-answer">We offer highly personalized, ethical, and holistic guidance, focusing on each student's unique strengths and aspirations. Our proven track record and supportive approach set us apart.</div>
+            <div class="faq-question">Why should we choose you?</div>
+            <div class="faq-answer">We're a team of students who each successfully navigated the college application process and documented our journey so students like you don't have to start from scratch. As recent admits, we know from personal experience what it takes!</div>
           </div>
           <div class="faq-item">
             <div class="faq-question">Do you help with financial aid and scholarships?</div>
@@ -165,7 +196,7 @@
           </div>
           <div class="faq-item">
             <div class="faq-question">Can you help international students?</div>
-            <div class="faq-answer">Absolutely. We have extensive experience working with students from around the world and can help navigate international admissions requirements.</div>
+            <div class="faq-answer">Absolutely. In fact, some of our mentors were international applicants that got in! We have extensive experience working with students from around the world and can help navigate international admissions requirements.</div>
           </div>
           <div class="faq-item">
             <div class="faq-question">How do I get started?</div>
@@ -176,30 +207,21 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact fade-in-section">
-      <div class="container">
-        <h2>Contact Us</h2>
-        <div class="contact-info-list">
-          <div class="contact-info-card">
-            <div class="contact-info-title">Email</div>
-            <div class="contact-info-detail">contact@email.com</div>
-          </div>
-          <div class="contact-info-card">
-            <div class="contact-info-title">Phone</div>
-            <div class="contact-info-detail">(555) 123-4567</div>
-          </div>
-          <div class="contact-info-card">
-            <div class="contact-info-title">Business Hours</div>
-            <div class="contact-info-detail">Mon-Fri: 9am - 6pm</div>
-          </div>
-        </div>
-      </div>
-    </section>
+<section id="contact" class="contact fade-in-section">
+  <div class="container" style="text-align: center;">
+    <h2>Proven Strategies. Real Acceptances.</h2>
+    <p style="font-size: 1.1rem; color: var(--text-light); max-width: 700px; margin: 0 auto 2rem;">
+      We're committed to helping you achieve your college dreams. Please reach out to us with any questions or concerns.
+    </p>
+    <a href="contact.html" class="cta-btn" style="font-size: 1.1rem;">Book a Free Consultation</a>
+  </div>
+</section>
+
   </main>
 
   <footer>
     <div class="container footer-container">
-      <div class="footer-brand">[Name]</div>
+      <div class="footer-brand"> MentorMate</div>
       <div class="footer-links">
         <a href="#home">Home</a>
         <a href="#about">About</a>
@@ -209,7 +231,7 @@
         <a href="#faq">FAQ</a>
         <a href="#contact">Contact</a>
       </div>
-      <div class="footer-copy">&copy; 2025 [Name]. All rights reserved.</div>
+      <div class="footer-copy">&copy; 2025 MentorMate. All rights reserved.</div>
     </div>
   </footer>
 

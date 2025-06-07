@@ -1,16 +1,17 @@
 /* === Color Theme === */
 :root {
-  --primary: #2a4365;
-  --primary-dark: #1a2740;
-  --accent: #5fa8d3;
-  --background: #f7fafc;
-  --surface: #ffffff;
-  --text: #25324b;
-  --text-light: #6b7a90;
-  --shadow: 0 4px 24px rgba(42,67,101,0.3);
+  --primary: #800000;            /* Maroon */
+  --primary-dark: #4d0000;       /* Darker maroon */
+  --accent: #b30000;             /* Accent red/maroon */
+  --background: #ffffff;         /* White background */
+  --surface: #ffffff;            /* Card surface white */
+  --text: #2e2e2e;               /* Dark text for readability */
+  --text-light: #555555;         /* Light text */
+  --shadow: 0 4px 24px rgba(128, 0, 0, 0.3);  /* Maroon shadow */
   --radius: 18px;
   --transition: 0.5s cubic-bezier(.77,0,.18,1);
 }
+
 
 html {
   scroll-behavior: smooth;
@@ -95,8 +96,9 @@ nav a:focus::after {
 
 /* === Hero Section === */
 .hero {
-  background: linear-gradient(120deg, var(--primary) 60%, var(--accent) 100%);
-  background-size: 200% 200%;
+  background: 
+    linear-gradient(120deg, rgba(128, 0, 0, 0.85) 60%, rgba(179, 0, 0, 0.75) 100%),
+    url("images/banner.jpg") center center / cover no-repeat;
   color: var(--surface);
   padding: 7rem 0 5rem 0;
   text-align: center;
@@ -104,6 +106,7 @@ nav a:focus::after {
   overflow: hidden;
   animation: fadeInDown 1.2s cubic-bezier(.77,0,.18,1), heroGradient 8s ease-in-out infinite alternate;
 }
+
 .hero-title {
   font-size: 2.8rem;
   font-weight: 800;
