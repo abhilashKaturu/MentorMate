@@ -97,7 +97,7 @@ nav a:focus::after {
 /* === Hero Section === */
 .hero {
   background: 
-    linear-gradient(120deg, rgba(128, 0, 0, 0.85) 60%, rgba(179, 0, 0, 0.75) 100%),
+    linear-gradient(120deg, rgba(236, 107, 107, 0.85) 60%, rgba(236, 146, 146, 0.75) 100%),
     url("images/banner.jpg") center center / cover no-repeat;
   color: var(--surface);
   padding: 7rem 0 5rem 0;
